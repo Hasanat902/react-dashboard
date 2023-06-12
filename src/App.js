@@ -1,10 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    <div className="">
-        <h2 className='text-3xl text-green-500'>Hey there?</h2>
+    <div className="flex">
+        <div className='basis-[14%] h-[100vh] border'>
+          <Sidebar></Sidebar>
+        </div>
+        <div className='basis-[86%] border'>D</div>
     </div>
   );
 }

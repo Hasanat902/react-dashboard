@@ -60,6 +60,7 @@ const PieComponent = () => {
                     ))
                 }
             </div>
+
         </div>
     );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { FaEllipsisV, FaRegCalendarMinus } from 'react-icons/fa';
+import PieComponent from './PieComponent';
 
 const data = [
   {
@@ -115,8 +116,14 @@ const Main = () => {
                     </div>
                 </div>
 
-                <div className='basis-[30%]'>
-
+                <div className='basis-[30%] border bg-white shadow-md cursor-pointer rounded-[4px]'>
+                        <div className='bg-[#F8F9FC] flex items-center justify-between py-[15px] px-[20px] border-b-[1px] border-[#EDEDED]'>
+                            <h2>Revenue Resources</h2>
+                            <FaEllipsisV color='gray' className='cursor-pointer'></FaEllipsisV>
+                        </div>
+                        <div className='pl-[35px] '>
+                            <PieComponent></PieComponent>
+                        </div>
                 </div>
             </div>
         </div>
